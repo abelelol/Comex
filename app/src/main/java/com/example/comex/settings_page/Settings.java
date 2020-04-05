@@ -27,8 +27,7 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
-        Toolbar myToolbar;
-        myToolbar = (Toolbar) findViewById(R.id.settings_toolbar);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.settings_toolbar);
         setSupportActionBar(myToolbar);
         recyclerView = (RecyclerView) findViewById(R.id.settings_recycler);
         settings_title = getResources().getStringArray(R.array.settings_titles);
