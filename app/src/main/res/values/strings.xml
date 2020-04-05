@@ -29,4 +29,13 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
+    <!--  Settings Page  -->
+    <string-array name="settings_titles">
+        <item>"Activity"</item>
+        <item>"Notifications"</item>
+        <item>"Privacy"</item>
+        <item>"Security"</item>
+        <item>"Log Out"</item>
+    </string-array>
+
 </resources>
