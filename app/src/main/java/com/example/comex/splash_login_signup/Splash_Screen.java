@@ -29,7 +29,7 @@ public class Splash_Screen extends AppCompatActivity {
         decorView = getWindow().getDecorView();
         comex = findViewById(R.id.SplashComex);
         signup = findViewById(R.id.sign_up1);
-        login = findViewById(R.id.login);
+        login = findViewById(R.id.initlogin);
         // Hide the status bar.
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
@@ -67,6 +67,10 @@ public class Splash_Screen extends AppCompatActivity {
 
     public void signup(View v){
         Intent i = new Intent(Splash_Screen.this, Sign_up.class);
+        startActivity(i);
+    }
+    public void login(View v){
+        Intent i = new Intent(Splash_Screen.this, Log_in.class);
         startActivity(i);
     }
 }

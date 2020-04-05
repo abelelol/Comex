@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary">
 
     <TextView
-        android:id="@+id/SplashComex"
+        android:id="@+id/loginComex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -21,11 +21,10 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <EditText
-        android:id="@+id/signup_name"
+        android:id="@+id/login_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:hint="Ex: Josea Garcia"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +34,11 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <EditText
-        android:id="@+id/signup_email"
+        android:id="@+id/login_password"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:hint="Ex: joseag101@gmail.com"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +46,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -61,22 +73,7 @@
         app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
-
-    <EditText
-        android:id="@+id/signup_password"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:hint="Ex: 12323"
-        android:padding="10dp"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,44 +87,29 @@
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Name"
-        android:textColor="@color/colorAccent"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357" />
 
     <Button
-        android:id="@+id/final_signup"
+        android:id="@+id/final_login"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:onClick="locationinfopage"
-        android:text="Sign Up"
+        android:text="Login"
+        android:onClick="final_login"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.808" />
 
     <Button
-        android:id="@+id/cancel"
+        android:id="@+id/cancel_login"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:text="Cancel"
-        android:onClick="cancel_signup"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

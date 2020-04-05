@@ -31,4 +31,9 @@ public class Sign_up extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void locationinfopage(View v){
+        Intent i = new Intent(Sign_up.this, Setup_Location.class);
+        startActivity(i);
+    }
+
 }

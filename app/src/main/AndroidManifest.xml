@@ -28,6 +28,24 @@
             android:label="sign up page"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".splash_login_signup.Setup_Location"
+            android:label="location page"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".splash_login_signup.Log_in"
+            android:label="login page"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".home_screen.Home"
+            android:theme="@style/AppTheme.NoActionBar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>
