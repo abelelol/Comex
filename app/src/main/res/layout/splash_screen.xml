@@ -34,11 +34,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/initlogin"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:text="Login"
+        android:onClick="login"
         android:visibility="invisible"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
